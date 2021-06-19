@@ -152,6 +152,42 @@
       border: none;
     }
 
+    
+    .head .horn {
+      --shape-x: 60%;
+      --shape-y: 15%;
+      --shape-width: 30%;
+      --shape-height: 30%;
+      --shape-rotate: -90deg;
+      --shape-origin: 0% 50%;
+      --shape-radius: 50%;
+      background-color: var(--color-hair);
+    }
+
+    .head .horn:before {
+      content: "";
+      --shape-x: 25%;
+      --shape-y: 10%;
+      --shape-width: 130%;
+      --shape-height: 80%;
+      --shape-rotate: -5deg;
+      --shape-origin: 0% 20%;
+      --shape-radius: 50%;
+      background-color: var(--color-hair);
+    }
+
+    .head .horn:after {
+      content: "";
+      --shape-x: 80%;
+      --shape-y: -15%;
+      --shape-width: 130%;
+      --shape-height: 60%;
+      --shape-rotate: -5deg;
+      --shape-origin: 0% 20%;
+      --shape-radius: 50%;
+      background-color: var(--color-hair);
+    }
+
     .head .skull {
       --shape-width: 55%;
       --shape-height: 80%;
@@ -2082,6 +2118,7 @@
             </div>
           </div>
           <div class="head">
+            <div class="horn"></div>
             <div class="skull"></div>
             <div class="nose"></div>
             <div class="face"></div>
@@ -2288,6 +2325,7 @@
           </div>
           
           <div class="head">
+            <div class="horn"></div>
             <div class="skull"></div>
             <div class="nose"></div>
             <div class="face"></div>
