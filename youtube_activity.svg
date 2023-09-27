@@ -14,6 +14,27 @@
       justify-content: center;
       row-gap: 0.5rem;
     }
+
+    .record {
+      display: block;
+      position: absolute;
+      aspect-ratio: 1/1;
+      width: 100%;
+      z-index: -1;
+      
+      filter: invert(5%) brightness(.35);
+      animation: spin 6s linear infinite;
+      transform-origin: center;
+    }
+    
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg)
+      }
+    }
     
     .thumbnail {
       aspect-ratio: 16 / 9;
@@ -94,6 +115,16 @@
       }
     }
   </style>
+  <g class="record">
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="20" />
+    </filter>
+    <ellipse class="record" cx="160" cy="160" rx="160" ry="160" fill="#aaa" />
+    <clipPath id="record-clip" >
+      <ellipse cx="160" cy="160" rx="160" ry="160" />
+    </clipPath>
+    <path fill="#aaa" d="M 140 160 L 70 0 L 250 0 L 180 160 L 250 320 L 70 320 Z" clip-path="url(#record-clip)" filter="url(#blur)" />
+  </g>
   <foreignObject width="320" height="320">
     <div xmlns="http://www.w3.org/1999/xhtml" class="container">
       <span>
