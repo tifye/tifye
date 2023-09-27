@@ -1,3 +1,1 @@
-<div align="center">
-  <img src="https://api.joshuadematas.me/youtube/activity/svg" />
-</div>
+![Youtube Activity](https://api.joshuadematas.me/youtube/activity/svg)
