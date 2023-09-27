@@ -119,7 +119,7 @@
     <filter id="blur">
       <feGaussianBlur stdDeviation="20" />
     </filter>
-    <ellipse class="record" cx="160" cy="160" rx="160" ry="160" fill="#aaa" />
+    <ellipse class="record" cx="160" cy="160" rx="160" ry="160" fill="#222d3d" />
     <clipPath id="record-clip" >
       <ellipse cx="160" cy="160" rx="160" ry="160" />
     </clipPath>
